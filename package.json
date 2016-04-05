@@ -1,0 +1,24 @@
+{
+  "name": "front-validator",
+  "version": "0.1.0",
+  "description": "Validator for front-end form validations.",
+  "main": "src/validator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DotHide/Validator.git"
+  },
+  "keywords": [
+    "validator",
+    "validation",
+    "form"
+  ],
+  "author": "Martin <dothide@gmail.com> (https://github.com/DotHide)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DotHide/Validator/issues"
+  },
+  "homepage": "https://github.com/DotHide/Validator#readme"
+}
