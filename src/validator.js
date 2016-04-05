@@ -44,31 +44,31 @@ var Validator = function() {
 
   function start() {
     for (var i = 0, n = forms.length; i < n; i++) {
-      formValidate(forms[i]);
+      _formValidate(forms[i]);
     }
   }
 
-  function formValidate(form) {
+  function _formValidate(form) {
     var inputs = [].filter.call(form.children, function(ele) {
       return ele.hasAttribute('validations');
     });
 
     for (var i = 0, n = inputs.length; i < n; i++) {
-      inputValidate(inputs[i]);
+      _inputValidate(inputs[i]);
     }
   }
 
-  function inputValidate(input) {
+  function _inputValidate(input) {
     var vals = input.getAttribute('validations').split(',');
     for (var i = 0, n = vals.length; i < n; i++) {
       var msg = validations[vals[i]](input.value);
       if (msg) {
-        showErrorMessage(input, msg);
+        _showErrorMessage(input, msg);
       }
     }
   }
 
-  function showErrorMessage(input, msg) {
+  function _showErrorMessage(input, msg) {
     console.log(input, msg);
   }
 }
